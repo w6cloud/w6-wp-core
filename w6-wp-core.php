@@ -9,7 +9,11 @@
  *
  * @link              https://web6.fr
  * @since             1.0.0
- * @package           w6-core
+ * @package           W6\Wp_Seo
+ * @author            WEB6 <contact@web6.fr>
+ * @copyright         2020 WEB6
+ * @license           https://www.gnu.org/licenses/gpl-3.0.txt  GNU GPLv3
+ * @link              https://github.com/web6-fr/w6-wp-core
  *
  * @wordpress-plugin
  * Plugin Name:       WEB6 Core
@@ -37,3 +41,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not see https://www.gnu.org/
  */
+
+namespace W6\Core;
+
+/**
+ * Check if WordPress was correctly loaded
+ */
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+/**
+ * Composer autoload
+ *
+ * Needed to properly autoload the classes
+ */
+require_once 'vendor/autoload.php';
+
+
