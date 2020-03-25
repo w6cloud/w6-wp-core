@@ -1,0 +1,40 @@
+{
+    "name": "web6/wp-core",
+    "description": "WEB6 WordPress Core Plugin",
+    "version": "1.0.0",
+    "type": "wordpress-plugin",
+    "keywords": ["wordpress", "wordpress-plugin", "framework"],
+    "homepage": "https://web6.fr",
+    "readme": "README.md",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "WEB6",
+            "email": "contact@web6.fr",
+            "homepage": "https://web6.fr",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/web6-fr/w6-wp-core/issues",
+        "docs": "https://github.com/web6-fr/w6-wp-core/wiki"
+    },
+    "require": {
+        "php": ">=7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "W6\\Core\\": "libs/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/web6-fr/w6-wp-core"
+        }
+    ]
+}
